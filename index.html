@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>A Festa - Pegue e Monte</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Playfair+Display:ital,wght@0,400;0,600;1,400&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <!-- FontAwesome for Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+
+<body>
+    <!-- Theme Controls (Radio Inputs) -->
+    <input type="radio" name="theme" id="theme-system" style="display: none;" checked>
+    <input type="radio" name="theme" id="theme-light" style="display: none;">
+    <input type="radio" name="theme" id="theme-dark" style="display: none;">
+
+
+    <!-- Theme Toggle Floating Button -->
+    <div class="theme-controls">
+        <!-- Visible when System is checked (Default) -> Clicks to Light -->
+        <label for="theme-light" class="theme-toggle-btn btn-system" title="Tema: Sistema">
+            <i class="fa-solid fa-desktop"></i>
+        </label>
+
+        <!-- Visible when Light is checked -> Clicks to Dark -->
+        <label for="theme-dark" class="theme-toggle-btn btn-light" title="Tema: Claro">
+            <i class="fa-solid fa-sun"></i>
+        </label>
+
+        <!-- Visible when Dark is checked -> Clicks to System -->
+        <label for="theme-system" class="theme-toggle-btn btn-dark" title="Tema: Escuro">
+            <i class="fa-solid fa-moon"></i>
+        </label>
+    </div>
+
+    <!-- Header -->
+    <header>
+        <div class="container">
+            <a href="#" class="logo">
+                <img src="img/logo/a_festa_logo_clara.png" alt="A Festa Logo" class="logo-for-dark-bg">
+                <img src="img/logo/a_festa_logo_escura.png" alt="A Festa Logo" class="logo-for-light-bg"
+                    style="display: none;">
+            </a>
+            <nav>
+                <ul>
+                    <li><a href="#kits">Nossos Kits</a></li>
+                    <li><a href="#como-funciona">Como Funciona</a></li>
+                    <li><a href="#contato">Contato</a></li>
+                </ul>
+            </nav>
+            <a href="https://wa.me/553798175142" target="_blank" class="btn btn-primary">RESERVAR</a>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="container">
+            <div class="hero-content">
+                <div class="floating-pill">✨ Festas de Luxo</div>
+                <h1>Transforme Momentos em <br> <span class="highlight">Memórias Inesquecíveis</span></h1>
+                <p>Alugue kits completos para festas sofisticadas. Design elegante, qualidade premium e a liberdade de
+                    criar sua celebração perfeita em casa.</p>
+                <a href="https://wa.me/553798175142" target="_blank" class="btn btn-primary">RESERVAR KIT &nbsp; <i
+                        class="fa-solid fa-arrow-right"></i></a>
+            </div>
+            <div class="hero-image">
+                <img src="img/a_festa_time.jpeg" alt="Time A Festa">
+                <div class="hero-badge">
+                    <div class="badge-icon">
+                        <i class="fa-solid fa-heart" style="color: #fff;"></i>
+                    </div>
+                    <div class="badge-text">
+                        <span>+ de 3000 Festas</span>
+                        <small>Realizadas com sucesso</small>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section class="features">
+        <div class="container">
+            <h2 class="section-title">Por que escolher A Festa?</h2>
+            <p class="section-subtitle">Oferecemos uma experiência completa para você criar celebrações memoráveis com
+                elegância e praticidade.</p>
+
+            <div class="features-grid">
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fa-solid fa-box-open"></i>
+                    </div>
+                    <h3>Kits Completos</h3>
+                    <p>Tudo o que você precisa para criar uma festa inesquecível, cuidadosamente selecionado e
+                        higienizado.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fa-regular fa-calendar-check"></i>
+                    </div>
+                    <h3>Reserva Flexível</h3>
+                    <p>Escolha suas datas com facilidade. Entrega e retirada incluídas na região metropolitana.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fa-regular fa-heart"></i>
+                    </div>
+                    <h3>Qualidade Premium</h3>
+                    <p>Materiais de alta qualidade e design sofisticado para tornar sua celebração única.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Portfolio / Kits Section -->
+    <section class="portfolio" id="kits">
+        <div class="container">
+            <div class="portfolio-header">
+                <h2 class="section-title">Nossos Kits <span>famosinhos</span></h2>
+                <p class="section-subtitle">Cada kit é cuidadosamente montado com itens de alta qualidade para garantir
+                    uma festa impecável.</p>
+            </div>
+
+            <div class="kits-grid">
+                <!-- Kit 1 -->
+                <div class="kit-card">
+                    <div class="kit-image">
+                        <img src="img/anivers_ex.jpeg" alt="Kit Aniversário">
+                        <div class="kit-overlay"></div>
+                    </div>
+                    <div class="kit-content">
+                        <h3>Aniversário</h3>
+                        <ul class="kit-features">
+                            <li><i class="fa-solid fa-check"></i> Pendente</li>
+                            <li><i class="fa-solid fa-check"></i> Mesas</li>
+                            <li><i class="fa-solid fa-check"></i> Boleira</li>
+                            <li><i class="fa-solid fa-check"></i> E muito mais! *</li>
+                        </ul>
+                        <a href="https://wa.me/553798175142" target="_blank" class="btn btn-primary">Reservar Este
+                            Kit</a>
+                    </div>
+                </div>
+
+                <!-- Kit 2 -->
+                <div class="kit-card">
+                    <div class="kit-image">
+                        <img src="img/casamento_ex.jpeg" alt="Kit Casamento">
+                    </div>
+                    <div class="kit-content">
+                        <h3>Casamento</h3>
+                        <ul class="kit-features">
+                            <li><i class="fa-solid fa-check"></i> Pendente</li>
+                            <li><i class="fa-solid fa-check"></i> Mesas</li>
+                            <li><i class="fa-solid fa-check"></i> Bandeja</li>
+                            <li><i class="fa-solid fa-check"></i> E muito mais! *</li>
+                        </ul>
+                        <a href="https://wa.me/553798175142" target="_blank" class="btn btn-primary">Reservar Este
+                            Kit</a>
+                    </div>
+                </div>
+
+                <!-- Kit 3 -->
+                <div class="kit-card">
+                    <div class="kit-image">
+                        <img src="img/festa_de_15_ex.jpeg" alt="Kit 15 Anos">
+                    </div>
+                    <div class="kit-content">
+                        <h3>Aniversário de 15 Anos</h3>
+                        <ul class="kit-features">
+                            <li><i class="fa-solid fa-check"></i> Pendente</li>
+                            <li><i class="fa-solid fa-check"></i> Vasos</li>
+                            <li><i class="fa-solid fa-check"></i> Boleiras</li>
+                            <li><i class="fa-solid fa-check"></i> E muito mais! *</li>
+                        </ul>
+                        <a href="https://wa.me/553798175142" target="_blank" class="btn btn-primary">Reservar Este
+                            Kit</a>
+                    </div>
+                </div>
+            </div>
+            <p
+                style="text-align: center; color: var(--text-muted); font-size: 0.8rem; margin-top: 2rem; font-style: italic;">
+                * Consulte com especialista</p>
+        </div>
+    </section>
+
+    <!-- How it Works Section -->
+    <section class="how-it-works" id="como-funciona">
+        <div class="container">
+            <h2 class="section-title">Como Funciona</h2>
+            <p class="section-subtitle">Processo simples e transparente para você ter a festa dos seus sonhos.</p>
+
+            <div class="steps-container">
+                <div class="step-item">
+                    <div class="step-number">01</div>
+                    <h3>Escolha seu Kit</h3>
+                    <p>Navegue pelo catálogo e selecione o kit perfeito para sua celebração.</p>
+                </div>
+                <div class="step-item">
+                    <div class="step-number">02</div>
+                    <h3>Reserve a Data</h3>
+                    <p>Escolha a data desejada e confirme a disponibilidade do kit.</p>
+                </div>
+                <div class="step-item">
+                    <div class="step-number">03</div>
+                    <h3>Receba em Casa</h3>
+                    <p>Entregamos o kit completo no endereço escolhido, pronto para usar.</p>
+                </div>
+                <div class="step-item">
+                    <div class="step-number">04</div>
+                    <h3>Celebre & Devolva</h3>
+                    <p>Aproveite sua festa! Após o evento, nós recolhemos tudo.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Banner Section -->
+    <section class="cta-banner">
+        <div class="container">
+            <div class="cta-box">
+                <h2>Pronta para criar sua festa dos sonhos?</h2>
+                <p>Reserve seu kit agora e garanta uma celebração inesquecível com a elegância que você merece.</p>
+                <a href="https://wa.me/553798175142" target="_blank" class="btn btn-primary">RESERVAR AGORA</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer id="contato">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-col">
+                    <a href="#" class="logo" style="margin-bottom: 1.5rem; display: inline-block;">
+                        <img src="img/logo/a_festa_logo_clara.png" alt="A Festa Logo" class="logo-for-dark-bg">
+                        <img src="img/logo/a_festa_logo_escura.png" alt="A Festa Logo" class="logo-for-light-bg"
+                            style="display: none;">
+                    </a>
+                    <p>Transformando momentos especiais em memórias inesquecíveis através de festas de luxo.</p>
+                </div>
+                <div class="footer-col">
+                    <h4>Links Rápidos</h4>
+                    <ul>
+                        <li><a href="#kits">Nossos Kits</a></li>
+                        <li><a href="#como-funciona">Como Funciona</a></li>
+                        <li><a href="https://www.gov.br/esporte/pt-br/acesso-a-informacao/lgpd" target="_blank"
+                                rel="noopener noreferrer">LGPD</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Contato</h4>
+                    <ul>
+                        <li><i class="fa-solid fa-phone" style="color: var(--primary);"></i> (37) 99877-9142</li>
+                        <li><i class="fa-solid fa-location-dot" style="color: var(--primary);"></i> Divinópolis, MG</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="copyright">
+                <p>&copy; 2026 A Festa. Todos os direitos reservados.</p>
+            </div>
+        </div>
+    </footer>
+
+</body>
+
+</html>
